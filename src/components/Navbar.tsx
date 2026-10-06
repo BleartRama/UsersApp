@@ -9,8 +9,6 @@ const Navbar = () => {
             <div className="flex items-center gap-6">
                 <NavLink to="/" className={({ isActive }) => isActive ? "font-medium text-blue-400": "font-medium text-slate-400 transition hover:text-white"}>Home</NavLink>
             
-            
-                <Link to="/users"></Link>
                 <NavLink to="/users" className={({ isActive }) => isActive ? "font-medium text-blue-400" : "font-medium text-slate-400 transition hover:text-white"}>Users</NavLink>
             </div>
         </div>

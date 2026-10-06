@@ -33,4 +33,4 @@ interface User {
     roles: string[];
 }
 
-export type { User, Profile, Address, Settings, Notifications };
+export type { User,};

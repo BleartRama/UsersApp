@@ -1,6 +1,7 @@
 import type { User } from '../types/User';
 
-export const fetchUsers = async (): Promise<User[]> => {
+const fetchUsers = async (): Promise<User[]> => {
+  
   const res = await fetch(
     'https://api-userapi.onrender.com/api/users/getUsers',
     {
@@ -18,3 +19,5 @@ export const fetchUsers = async (): Promise<User[]> => {
 
   return data;
 };
+
+export default fetchUsers;
